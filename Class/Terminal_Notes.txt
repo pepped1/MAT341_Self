@@ -1,0 +1,10 @@
+Notes on Terminal Commands
+
+-ls -- lists every file/folder in directory
+-cd -- change directory (.. to go up)
+-pwd -- check current directory
+
+-vi [name].txt -- open a text file in vi editor
+-i -- start editing
+-esc button -- stop editing
+-: -- command for vi editor
