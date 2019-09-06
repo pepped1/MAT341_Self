@@ -1,0 +1,11 @@
+function test_Poly()
+
+a = [1 1.5 2.5];
+x = 77;
+
+%yooo test poly code uno
+
+val1 = p1(x)
+
+%numero does
+val2 = p2(a(1), a(2), a(3)
