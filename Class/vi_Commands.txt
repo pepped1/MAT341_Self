@@ -1,0 +1,6 @@
+vi [name].txt -- open or create a file in vi editor
+i -- start editing file
+esc -- stop editing file
+:w -- save file
+:q -- quit vi editor
+:# -- brings cursor to specific line number
