@@ -3,7 +3,7 @@ errTolVec = [1e-1 1e-2 1e-3 1e-4 1e-5 1e-6 1e-7 1e-8 1e-9 1e-10 1e-11];
 iter1 = [];
 iter2 = [];
 for i = 1:length(errTolVec)
-    iter1 = [iter1 Gradient_Descent_1(errTolVec(i),.5)];
+    iter1 = [iter1 Gradient_Descent_1(errTolVec(i),1)];
     iter2 = [iter2 Gradient_Descent_2(errTolVec(i))];
 end
 
@@ -26,10 +26,9 @@ ylabel('# of iterations, N')
 legend('Fixed Step', 'Barzilai-Borwein')
 
 end
-%a) for larger error tolerances, fixed step converges faster. for smaller error 
-%tolerances, barzilai-borwein converges faster.
+%a) fixed step seems to converge slightly faster than barzilai-borwein
 %b) if we change gamma to .5, fixed step converges slower that barzilai-borwein
 %for all tolerances.
 %c) barzilai-borwein doesn't need a gamma input
 %d) i would choose barzilai-borwein, as 1) it doesn't need an input and 2)
-%it it's much better at converging for lower tolerances
+%it it's better at converging for lower tolerances
