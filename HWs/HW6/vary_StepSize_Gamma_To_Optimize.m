@@ -3,7 +3,9 @@ iterations = [];
 stepSize = [];
 for i = .1:.01:1.5
     stepSize = [stepSize ; i];
+    %array of step sizes used
     iterations = [iterations ; Gradient_Descent_1(1e-10,i)];
+    %array of number of iterations from step sizes given
 end
 semilogx(stepSize, iterations, 'b', 'LineWidth', 5)
 xlabel('gamma (step-size)')

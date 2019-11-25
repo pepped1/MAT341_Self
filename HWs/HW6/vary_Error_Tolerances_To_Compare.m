@@ -5,9 +5,11 @@ iter2 = [];
 for i = 1:length(errTolVec)
     iter1 = [iter1 Gradient_Descent_1(errTolVec(i),1)];
     iter2 = [iter2 Gradient_Descent_2(errTolVec(i))];
+    %initiallizing arrays
 end
 
 figure(1)
+%loglog graph
 loglog(errTolVec, iter1,'b','LineWidth',5)
 hold on
 loglog(errTolVec, iter2,'r','LineWidth',5)
@@ -17,6 +19,7 @@ ylabel('# of iterations, N')
 legend('Fixed Step', 'Barzilai-Borwein')
 
 figure(2)
+%horizontal axis log
 semilogx(errTolVec, iter1,'b','LineWidth',5)
 hold on
 semilogx(errTolVec, iter2,'r','LineWidth',5)
